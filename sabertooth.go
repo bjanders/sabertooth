@@ -107,12 +107,13 @@ func (st *Sabertooth) Read(param, target, number byte) (int, error) {
 			return 0, err
 		}
 	}
-	data := make([]byte, 9)
-	n, err := st.port.Write(getCommand(st.address, param, target, number))
+	_, err := st.port.Write(getCommand(st.address, param, target, number))
 	if err != nil {
 		return 0, err
 	}
-	n, err = st.port.Read(data)
+
+	data := make([]byte, 9)
+	n, err := st.port.Read(data)
 	if err != nil {
 		return 0, err
 	}
