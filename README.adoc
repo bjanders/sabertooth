@@ -1,1 +1,4 @@
 = sabertooth - Go library for DimensionEngineering Sabertooth dual motor driver
+
+image:https://goreportcard.com/badge/github.com/bjanders/sabertooth["Go Report Card", link="https://goreportcard.com/report/github.com/bjanders/sabertooth"]
+image:https://pkg.go.dev/badge/bjanders/sabertooth["PkgGoDev", link="https://pkg.go.dev/bjanders/sabertooth"]
